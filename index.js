@@ -159,3 +159,7 @@ app.use((err, req, res, next) => {
     }
     return errorResponse(res, 'Terjadi kesalahan pada server', 500);
 });
+
+app.listen(port, () => {
+    console.log(`App running on port ${port}`);
+});
