@@ -6,3 +6,6 @@ GET
 
 PUT
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5cfc4ec4-ef67-4ebf-9959-c507f64acf00" />
+
+DELETE
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c4258dd7-f42e-46df-b670-20b50bada173" />
