@@ -33,3 +33,10 @@ app.use((req, res, next) => {
     })
     next()
 })
+
+//respnse envelope
+function successResponse(data, message, status = 200) {
+    return res.status(status).json({
+        success: true, message, data, error: null,
+    })
+}
