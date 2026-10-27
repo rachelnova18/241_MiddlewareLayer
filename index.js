@@ -150,3 +150,12 @@ app.delete('/biodata/:id', validateParams(idSchema), async (req, res) => {
 app.use((req, res) => {
     return errorResponse(res, 'endpoint tidak ditemukan', 404);
 });
+
+// global error handler
+app.use((err, req, res, next) => {
+    console.error(err);
+    if (res.headersSent) {
+        return next(err);
+    }
+    return errorResponse(res, 'Terjadi kesalahan pada server', 500);
+});
